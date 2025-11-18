@@ -12,16 +12,12 @@ body {
     
 }
 
-.logo {
-    width: 350px; 
-    
-}
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #1e3e62;
+    background-color: #0b192c;
 }
 
 nav ul {
