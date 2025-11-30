@@ -21,6 +21,7 @@ nav {
 }
 
 nav ul {
+    color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,9 +30,16 @@ nav ul {
     padding: 18px;
     
 }
+ 
+
+
 h1 {
     color: #ffffff;
-    font-size: 96px;
+    font-size: 56px;
+}
+
+h2 {
+  color: #ff6500;
 }
 
 .marca {
@@ -48,21 +56,30 @@ p {
   height:240px;
 }
 
-.li-nav {
+
+.nav-item {
     list-style-type: none;
 }
 
-.a-nav {
+.nav-link {
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
 }
 
-.welcome-section {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  
 
+
+}
+
+
+div {
+  max-width: 400px;
 }
 
 main {
@@ -80,9 +97,11 @@ main {
   margin-bottom: 20px;
 }
 
+
 .welcome-container h1 span {
   color: #ff6500;
 }
+
 
 .buttons {
   margin-top: 60px;
@@ -102,8 +121,11 @@ main {
   background-color: #ff6500;
 }
 
-.formulario {
-  max-width: 400px;
+.form-floating {
+  margin-top: 16px;
+  max-width: 500px;
+  
+  
 }
 
 
@@ -129,9 +151,10 @@ main {
 }
 
 .character img {
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 700px;
+  
 }
+ 
 
 label {
     color: #ffffff;
