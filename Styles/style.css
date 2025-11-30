@@ -67,6 +67,10 @@ p {
     font-size: 18px;
 }
 
+.nav-link:hover {
+  color: #ff6500;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -76,7 +80,6 @@ p {
 
 
 }
-
 
 div {
   max-width: 400px;
