@@ -81,8 +81,18 @@ p {
 
 }
 
-div {
-  max-width: 400px;
+.card {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+.card-title1 {
+  color: #ff6500;
+}
+
+.card-title2 {
+  color: #ff6500;
 }
 
 main {
@@ -143,14 +153,28 @@ main {
   text-align: center;
 }
 
+.btn:hover {
+  opacity: 75%;
+}
+
 .twitch {
   background-color: #ff6500;
   color: white;
 }
 
+.twitch:hover {
+  opacity: 80%;
+  background-color: rgba(255, 101, 0, 0.95);
+}
+
 .kick {
   background-color: #1e3e62;
   color: white;
+}
+
+.kick:hover {
+  opacity: 80%;
+  background-color: #1e3e62;
 }
 
 .character img {
