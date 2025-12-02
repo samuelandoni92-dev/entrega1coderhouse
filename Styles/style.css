@@ -194,3 +194,39 @@ footer p {
     color: #ffffff;
 }
 
+
+/* MEDIA QUERIES */
+@media (max-width: 450px) {
+  body {
+    margin-top: 120px;
+  } 
+  
+  .logo {
+    grid-area: logo;
+
+   }
+
+   nav ul {
+  
+    grid-area: ul;
+    gap: 50px;
+   }
+   .navbar {
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo logo logo"
+        "ul ul ul ul ul";
+    grid-template-rows: 10px 90px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 80px;
+   }
+
+   .container {
+    flex-direction: column;
+
+   }
+   footer {
+    flex-direction: column;
+   }
+}
+
