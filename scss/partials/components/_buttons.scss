@@ -1,0 +1,31 @@
+@use '../utilities/extend';
+@use '../utilities/variables';
+
+.btn {
+  @extend %button;
+    &:hover {
+        opacity: 75%;
+    }
+}
+
+.buttons {
+  margin-top: 60px;
+  .twitch {
+     background-color: variables.$marca-color;
+     color: variables.$main-color;
+        &:hover {
+            opacity: 80%;
+            background-color: rgba(255, 101, 0, 0.95);
+        }
+    } 
+
+ .kick {
+     background-color: variables.$bg-color;
+     color: variables.$main-color;
+        &:hover {
+            opacity: 80%;
+            background-color: variables.$bg-color;
+        }
+   }
+ 
+}

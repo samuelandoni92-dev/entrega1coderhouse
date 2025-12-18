@@ -1,0 +1,73 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+// CONTENEDOR 
+.container {
+    @include mixins.flex(row,space-between, center, wrap);
+    background-color: variables.$bg-color;
+  
+}
+
+.welcome-container {
+  max-width: 400px;
+    h1 {
+     color: variables.$main-color;   
+     font-size: variables.$main-size;
+     margin-bottom: 20px;
+     span {
+         color: #ff6500;
+        }
+    }
+}
+
+p {
+  color: variables.$main-color;
+}
+
+h2 {
+  color: #ff6500;
+}
+
+.character img {
+  max-height: 700px;
+  
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 450px) {
+  body {
+    margin-top: 120px;
+    margin-left: 20px;
+  } 
+  
+  .logo {
+    margin-top: 30px;
+    width: 400px;
+    height: 250px;
+    grid-area: logo;
+
+   }
+
+   nav ul {
+  
+    grid-area: ul;
+    gap: 50px;
+   }
+   .navbar {
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo logo logo"
+        "ul ul ul ul ul";
+    grid-template-rows: 10px 90px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 80px;
+   }
+
+   .container {
+    flex-direction: column;
+
+   }
+   footer {
+    flex-direction: column;
+   }
+}

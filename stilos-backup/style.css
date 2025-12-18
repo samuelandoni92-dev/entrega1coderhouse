@@ -1,0 +1,236 @@
+/* fuente Squada One */
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: "Squada One", sans-serif;
+    background-color:#0b192c;
+    margin: 20px 80px 20px 80px;
+    
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0b192c;
+}
+
+nav ul {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 18px;
+    
+}
+ 
+
+
+h1 {
+    color: #ffffff;
+    font-size: 56px;
+}
+
+h2 {
+  color: #ff6500;
+}
+
+.marca {
+    color:#ff6500 ;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.logo {
+  width: 300px; 
+  height:240px;
+}
+
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #ff6500;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+
+.card {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+.card-title1 {
+  color: #ff6500;
+}
+
+.card-title2 {
+  color: #ff6500;
+}
+
+main {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.welcome-container {
+  max-width: 400px;
+}
+
+.welcome-container h1 {
+  font-size: 76px;
+  margin-bottom: 20px;
+}
+
+
+.welcome-container h1 span {
+  color: #ff6500;
+}
+
+
+.buttons {
+  margin-top: 60px;
+}
+
+.submit {
+  padding: 10px 20px;
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff6500;
+}
+
+.form-floating {
+  margin-top: 16px;
+  max-width: 500px;
+  
+  
+}
+
+
+.btn {
+  padding: 10px 20px;
+  font-size: 30px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 75%;
+}
+
+.twitch {
+  background-color: #ff6500;
+  color: white;
+}
+
+.twitch:hover {
+  opacity: 80%;
+  background-color: rgba(255, 101, 0, 0.95);
+}
+
+.kick {
+  background-color: #1e3e62;
+  color: white;
+}
+
+.kick:hover {
+  opacity: 80%;
+  background-color: #1e3e62;
+}
+
+.character img {
+  max-height: 700px;
+  
+}
+ 
+
+label {
+    color: #ffffff;
+}
+
+footer {
+    margin: 60px 40px;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 450px) {
+  body {
+    margin-top: 120px;
+    margin-left: 20px;
+  } 
+  
+  .logo {
+    margin-top: 30px;
+    width: 400px;
+    height: 250px;
+    grid-area: logo;
+
+   }
+
+   nav ul {
+  
+    grid-area: ul;
+    gap: 50px;
+   }
+   .navbar {
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo logo logo"
+        "ul ul ul ul ul";
+    grid-template-rows: 10px 90px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 80px;
+   }
+
+   .container {
+    flex-direction: column;
+
+   }
+   footer {
+    flex-direction: column;
+   }
+}
+
