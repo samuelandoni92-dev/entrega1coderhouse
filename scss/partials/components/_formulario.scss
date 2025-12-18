@@ -11,10 +11,12 @@
 
 .buttons {
     margin-top: 15px;
+    
 }
 
 .submit { 
     @extend %button;
+    width: 400px;
     cursor: pointer;
     color: variables.$main-color;
     background-color: variables.$marca-color;
