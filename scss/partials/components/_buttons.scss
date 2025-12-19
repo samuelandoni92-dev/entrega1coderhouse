@@ -3,9 +3,6 @@
 
 .btn {
   @extend %button;
-    &:hover {
-        opacity: 75%;
-    }
 }
 
 .buttons {
@@ -14,17 +11,18 @@
      background-color: variables.$marca-color;
      color: variables.$main-color;
         &:hover {
-            opacity: 80%;
             background-color: rgba(255, 101, 0, 0.95);
+            transform: scale(1.1);
         }
     } 
 
  .kick {
-     background-color: variables.$bg-color;
+     background-color: #14a407;
      color: variables.$main-color;
+    ;
         &:hover {
-            opacity: 80%;
-            background-color: variables.$bg-color;
+            background-color: #14a407;
+            transform: scale(1.1);
         }
    }
  

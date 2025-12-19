@@ -24,10 +24,40 @@ nav {
                 font-size: variables.$p-size;
                 &:hover {
                     color: #ff6500;
+                    
                 }
             }
         }
     }
 }
+/* MEDIA QUERIES */
+@media (max-width: 450px) {
 
- 
+.logo {
+      margin-top: 30px;
+      width: 400px;
+      height: 250px;
+      grid-area: logo;
+  }
+   
+  nav ul {
+      grid-area: ul;
+      gap: 50px;
+    }
+  .navbar {
+    display: grid;
+    grid-template-areas: 
+        "logo logo logo logo logo"
+        "ul ul ul ul ul";
+    grid-template-rows: 10px 90px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+  }
+
+ }
+
+ @media (min-width: 451px) and (max-width: 900px) {
+    nav ul {
+      gap: 40px;
+    }
+}

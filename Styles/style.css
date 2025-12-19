@@ -45,6 +45,31 @@ nav ul .nav-item .nav-link:hover {
   color: #ff6500;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 450px) {
+  .logo {
+    margin-top: 30px;
+    width: 400px;
+    height: 250px;
+    grid-area: logo;
+  }
+  nav ul {
+    grid-area: ul;
+    gap: 50px;
+  }
+  .navbar {
+    display: grid;
+    grid-template-areas: "logo logo logo logo logo" "ul ul ul ul ul";
+    grid-template-rows: 10px 90px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+  }
+}
+@media (min-width: 451px) and (max-width: 900px) {
+  nav ul {
+    gap: 40px;
+  }
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -84,28 +109,20 @@ h2 {
     margin-top: 120px;
     margin-left: 20px;
   }
-  .logo {
-    margin-top: 30px;
-    width: 400px;
-    height: 250px;
-    grid-area: logo;
-  }
-  nav ul {
-    grid-area: ul;
-    gap: 50px;
-  }
-  .navbar {
-    display: grid;
-    grid-template-areas: "logo logo logo logo logo" "ul ul ul ul ul";
-    grid-template-rows: 10px 90px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 80px;
-  }
   .container {
     flex-direction: column;
+    gap: 30px;
   }
   footer {
     flex-direction: column;
+  }
+}
+@media (min-width: 451px) and (max-width: 900px) {
+  body {
+    margin-left: 20px;
+  }
+  .container {
+    gap: 30px;
   }
 }
 .submit, .btn {
@@ -119,10 +136,6 @@ h2 {
   text-align: center;
 }
 
-.btn:hover {
-  opacity: 75%;
-}
-
 .buttons {
   margin-top: 60px;
 }
@@ -131,16 +144,16 @@ h2 {
   color: #ffffff;
 }
 .buttons .twitch:hover {
-  opacity: 80%;
   background-color: rgba(255, 101, 0, 0.95);
+  transform: scale(1.1);
 }
 .buttons .kick {
-  background-color: #0b192c;
+  background-color: #14a407;
   color: #ffffff;
 }
 .buttons .kick:hover {
-  opacity: 80%;
-  background-color: #0b192c;
+  background-color: #14a407;
+  transform: scale(1.1);
 }
 
 .form-floating {
@@ -158,37 +171,12 @@ h2 {
   color: #ffffff;
   background-color: #ff6500;
 }
-
-/* MEDIA QUERIES */
-@media (max-width: 450px) {
-  body {
-    margin-top: 120px;
-    margin-left: 20px;
-  }
-  .logo {
-    margin-top: 30px;
-    width: 400px;
-    height: 250px;
-    grid-area: logo;
-  }
-  nav ul {
-    grid-area: ul;
-    gap: 50px;
-  }
-  .navbar {
-    display: grid;
-    grid-template-areas: "logo logo logo logo logo" "ul ul ul ul ul";
-    grid-template-rows: 10px 90px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 80px;
-  }
-  .container {
-    flex-direction: column;
-  }
-  footer {
-    flex-direction: column;
-  }
+.submit:hover {
+  opacity: 80%;
+  background-color: rgba(255, 101, 0, 0.95);
+  transform: scale(1.1);
 }
+
 .card {
   background-color: transparent;
   border-color: transparent;
@@ -199,6 +187,9 @@ h2 {
 .card .card-title2 {
   color: #ff6500;
 }
+.card .card-text {
+  font-size: 18px;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 450px) {
@@ -214,20 +205,35 @@ h2 {
   }
   nav ul {
     grid-area: ul;
-    gap: 50px;
+    gap: 40px;
   }
   .navbar {
     display: grid;
     grid-template-areas: "logo logo logo logo logo" "ul ul ul ul ul";
-    grid-template-rows: 10px 90px;
+    grid-template-rows: 10px 100px;
     grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
     gap: 80px;
+  }
+  .nav-item {
+    font-size: 10px;
   }
   .container {
     flex-direction: column;
   }
+  .card p {
+    font-size: 20px;
+  }
   footer {
     flex-direction: column;
+  }
+}
+@media (min-width: 451px) and (max-width: 900px) {
+  .card h1 {
+    font-size: 32px;
+  }
+  .card p {
+    width: 350px;
   }
 }
 footer {

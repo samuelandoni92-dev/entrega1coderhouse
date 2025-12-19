@@ -7,13 +7,18 @@
   border-color: transparent;
     .card-title1 {
         color: variables.$marca-color;
+      
     }
 
     .card-title2 {
         color: variables.$marca-color;
-    }   
+    } 
+    .card-text {
+          font-size: variables.$p-size;
+        }  
 
 }
+
 
 /* MEDIA QUERIES */
 @media (max-width: 450px) {
@@ -28,30 +33,54 @@
     height: 250px;
     grid-area: logo;
 
-   }
+  }
 
-   nav ul {
+  nav ul {
   
     grid-area: ul;
-    gap: 50px;
+    gap: 40px;
    }
-   .navbar {
+  .navbar {
     display: grid;
     grid-template-areas: 
         "logo logo logo logo logo"
         "ul ul ul ul ul";
-    grid-template-rows: 10px 90px;
+    grid-template-rows: 10px 100px;
     grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
     gap: 80px;
    }
 
-   .container {
+  .nav-item {
+      font-size: 10px;
+   }
+
+  .container {
     flex-direction: column;
+    
 
    }
-   footer {
+
+  .card p{
+    font-size: 20px;
+  }
+
+  footer {
     flex-direction: column;
    }
+}
+
+@media (min-width: 451px) and (max-width: 900px) {
+  .card h1 {
+  font-size: 32px;
+}
+.card p{
+  width: 350px;
+  
+  
+
+}  
+  
 }
 
 
