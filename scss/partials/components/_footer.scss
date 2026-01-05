@@ -1,10 +1,40 @@
+@use '../utilities/mixins';
 @use '../utilities/variables';
+
 
 //AQUI VA EL FOOTER
 
 footer {
-    margin: 60px 40px;
-    footer p {
-    color: variables.$main-color;
-    }
+    @include mixins.flex (column, center, center, wrap);
+    margin-top: 80px;
+    background-color: rgba(14, 24, 38, 0.8);
+    
+    
+
 }
+p {
+    margin-top: 15px
+}
+
+.icon-redes {
+    @include mixins.flex (row, center, center, wrap);
+
+    a {
+    @include mixins.flex (row, center, center, wrap);
+    width: 60px;
+    }
+    
+}
+
+
+.icon-redes img {
+        width: 200px;
+     }
+    
+
+
+
+
+
+
+

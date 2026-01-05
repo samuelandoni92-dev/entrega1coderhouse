@@ -1,13 +1,33 @@
+@use '../utilities/mixins';
 @use '../utilities/variables';
 @use '../utilities/extend';
 
-// FORMULARIO DE CONTACTO
 
-.form-floating {
+// FORMULARIO DE CONTACTO
+.container {
+  @include mixins.flex(row, space-between,center,wrap);
+  
+}
+.welcome-container {
+  max-width: 400px;
+  .card-title1 {
+      margin-top: 50px;
+      color: variables.$marca-color;   
+      font-size: variables.$tittle-size;
+      margin-bottom: 20px;
+    }
+  
+}
+
+
+
+.form-floating { 
   margin-top: 16px;
   max-width: 500px;
   
+  
 }
+
 
 .buttons {
     margin-top: 15px;
@@ -26,6 +46,13 @@
         transform: scale(1.1)
       }
 }
+
+
+.character img {
+  max-height: 700px;
+  
+}
+
 
 
 

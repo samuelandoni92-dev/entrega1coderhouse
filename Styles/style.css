@@ -48,21 +48,18 @@ nav ul .nav-item .nav-link:hover {
 /* MEDIA QUERIES */
 @media (max-width: 450px) {
   .logo {
-    margin-top: 30px;
     width: 400px;
     height: 250px;
     grid-area: logo;
   }
   nav ul {
+    color: #ffffff;
     grid-area: ul;
-    gap: 50px;
+    gap: 10px;
   }
   .navbar {
     display: grid;
-    grid-template-areas: "logo logo logo logo logo" "ul ul ul ul ul";
-    grid-template-rows: 10px 90px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 50px;
+    grid-template-areas: "logo logo logo logo logo";
   }
 }
 @media (min-width: 451px) and (max-width: 900px) {
@@ -106,8 +103,7 @@ h2 {
 /* MEDIA QUERIES */
 @media (max-width: 450px) {
   body {
-    margin-top: 120px;
-    margin-left: 20px;
+    margin: 10px;
   }
   .container {
     flex-direction: column;
@@ -156,6 +152,24 @@ h2 {
   transform: scale(1.1);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcome-container {
+  max-width: 400px;
+}
+.welcome-container .card-title1 {
+  margin-top: 50px;
+  color: #ff6500;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
 .form-floating {
   margin-top: 16px;
   max-width: 500px;
@@ -177,6 +191,10 @@ h2 {
   transform: scale(1.1);
 }
 
+.character img {
+  max-height: 700px;
+}
+
 .card {
   background-color: transparent;
   border-color: transparent;
@@ -193,39 +211,8 @@ h2 {
 
 /* MEDIA QUERIES */
 @media (max-width: 450px) {
-  body {
-    margin-top: 120px;
-    margin-left: 20px;
-  }
-  .logo {
-    margin-top: 30px;
-    width: 400px;
-    height: 250px;
-    grid-area: logo;
-  }
-  nav ul {
-    grid-area: ul;
-    gap: 40px;
-  }
-  .navbar {
-    display: grid;
-    grid-template-areas: "logo logo logo logo logo" "ul ul ul ul ul";
-    grid-template-rows: 10px 100px;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-between;
-    gap: 80px;
-  }
-  .nav-item {
-    font-size: 10px;
-  }
-  .container {
-    flex-direction: column;
-  }
   .card p {
     font-size: 20px;
-  }
-  footer {
-    flex-direction: column;
   }
 }
 @media (min-width: 451px) and (max-width: 900px) {
@@ -237,10 +224,37 @@ h2 {
   }
 }
 footer {
-  margin: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  background-color: rgba(14, 24, 38, 0.8);
 }
-footer footer p {
-  color: #ffffff;
+
+p {
+  margin-top: 15px;
+}
+
+.icon-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icon-redes a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60px;
+}
+
+.icon-redes img {
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

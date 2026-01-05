@@ -34,24 +34,21 @@ nav {
 @media (max-width: 450px) {
 
 .logo {
-      margin-top: 30px;
+      
       width: 400px;
       height: 250px;
       grid-area: logo;
   }
    
   nav ul {
+    color: variables.$main-color;
       grid-area: ul;
-      gap: 50px;
+      gap: 10px;
     }
   .navbar {
     display: grid;
     grid-template-areas: 
         "logo logo logo logo logo"
-        "ul ul ul ul ul";
-    grid-template-rows: 10px 90px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 50px;
   }
 
  }

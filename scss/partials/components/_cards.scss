@@ -22,52 +22,11 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 450px) {
-  body {
-    margin-top: 120px;
-    margin-left: 20px;
-  } 
-  
-  .logo {
-    margin-top: 30px;
-    width: 400px;
-    height: 250px;
-    grid-area: logo;
-
-  }
-
-  nav ul {
-  
-    grid-area: ul;
-    gap: 40px;
-   }
-  .navbar {
-    display: grid;
-    grid-template-areas: 
-        "logo logo logo logo logo"
-        "ul ul ul ul ul";
-    grid-template-rows: 10px 100px;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-between;
-    gap: 80px;
-   }
-
-  .nav-item {
-      font-size: 10px;
-   }
-
-  .container {
-    flex-direction: column;
-    
-
-   }
 
   .card p{
     font-size: 20px;
   }
 
-  footer {
-    flex-direction: column;
-   }
 }
 
 @media (min-width: 451px) and (max-width: 900px) {
@@ -76,8 +35,6 @@
 }
 .card p{
   width: 350px;
-  
-  
 
 }  
   
