@@ -5,6 +5,7 @@
 .container {
     @include mixins.flex(row,space-between, center, wrap);
     background-color: variables.$bg-color;
+    
   
 }
 
@@ -20,12 +21,13 @@
     }
 }
 
+
 p {
   color: variables.$main-color;
 }
 
 h2 {
-  color: #ff6500;
+  color: variables.$marca-color;
 }
 
 .character img {
@@ -36,9 +38,7 @@ h2 {
 /* MEDIA QUERIES */
 @media (max-width: 450px) {
   body {
-    margin: 10px;
-    
-    
+    margin: 10px;  
   } 
 
   .container {
