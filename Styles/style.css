@@ -61,6 +61,12 @@ nav ul .nav-item .nav-link:hover {
     display: grid;
     grid-template-areas: "logo logo logo logo logo";
   }
+  .navbar-toggler {
+    border-color: #ff6500;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 101, 0, 1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
 }
 @media (min-width: 451px) and (max-width: 900px) {
   nav ul {
@@ -234,7 +240,7 @@ footer {
 }
 
 p {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .icon-redes {

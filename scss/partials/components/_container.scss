@@ -4,8 +4,7 @@
 // CONTENEDOR 
 .container {
     @include mixins.flex(row,space-between, center, wrap);
-    background-color: variables.$bg-color;
-    
+    background-color: variables.$bg-color;    
   
 }
 
@@ -21,7 +20,6 @@
     }
 }
 
-
 p {
   color: variables.$main-color;
 }
@@ -29,6 +27,8 @@ p {
 h2 {
   color: variables.$marca-color;
 }
+
+
 
 .character img {
   max-height: 700px;
@@ -48,6 +48,7 @@ h2 {
    footer {
      flex-direction: column;
    }
+  
 }
 
 @media (min-width: 451px) and (max-width: 900px) {
